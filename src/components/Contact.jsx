@@ -32,7 +32,7 @@ const Contact = () => {
       </div>
       <div className="w-full min-h-[60vh]">
         <div className="w-full p-5 lg:p-10">
-          <div className="w-full h-full flex flex-col justify-center items-center gap-4 text-center bg-background shadow-lg lg:p-20 p-5 font-medium">
+          <div className="w-full h-full flex flex-col justify-center items-center gap-4 text-center bg-background lg:p-20 p-5 font-medium">
             <img
               src="/logo-1.png"
               alt="Logo Casa lalla"
