@@ -32,7 +32,7 @@ const Contact = () => {
       </div>
       <div className="w-full min-h-[60vh]">
         <div className="w-full p-5 lg:p-10">
-          <div className="w-full h-full flex flex-col justify-center items-center gap-4 text-center bg-[#F2D8BD] lg:p-20 p-5 font-medium">
+          <div className="w-full h-full flex flex-col justify-center items-center gap-4 text-center bg-background shadow-lg lg:p-20 p-5 font-medium">
             <img
               src="/logo-1.png"
               alt="Logo Casa lalla"
@@ -54,19 +54,19 @@ const Contact = () => {
             </div>
             <div className="w-full text-black py-4 flex justify-center items-center gap-3">
               <Link href="http://wa.me/212675480103" target="_blank">
-                <FaWhatsappSquare size={25} color="#128c7e" />
+                <FaWhatsappSquare size={25} color="#8c8554" />
               </Link>
               <Link
                 href="https://www.instagram.com/casa.lalla.takerkoust/"
                 target="_blank"
               >
-                <FaInstagramSquare size={25} color="#ec0075" />
+                <FaInstagramSquare size={25} color="#8c8554" />
               </Link>
               <Link
                 href="mailto:reservations@casalallatakerkoust.com"
                 target="_blank"
               >
-                <FaMailBulk size={25} color="#034fa0" />
+                <FaMailBulk size={25} color="#8c8554" />
               </Link>
             </div>
           </div>
