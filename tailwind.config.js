@@ -8,8 +8,27 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        color_black: "var(--black)",
+        color_white: "var(--white)",
+
+        text_color: "var(--text-color)",
+        border_color: "var(--border-color)",
+        white_color: "var(--white)",
+        bg_intro: "var(--bg-intro)",
+        bg_casa: "var(--bg-body)",
+        bg_contact: "var(--bg-contact)",
+        bg_navbar: "var(--bg-navbar)",
+
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        primary_2: "var(--primary-2)",
+        primary_3: "var(--primary-3)",
+        secondary: "var(--secondary)",
+        secondary_2: "var(--secondary-2)",
+      },
+      fontFamily: {
+        rolling: ["RollingPen", "serif"],
+        sackerCothic: ["Sacker-Gothics", "sans-serif"],
       },
     },
   },
