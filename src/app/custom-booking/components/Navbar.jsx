@@ -50,7 +50,7 @@ const Navbar = () => {
           {/* Mobile Navbar */}
           <div className="md:hidden flex justify-between items-center bg-background px-5 py-1">
             <Link href="/" className="text-2xl font-semibold">
-              <img src="/logo-1.png" className="w-20 h-20" alt="Logo" />
+              <img src="/logo-7.png" className="w-20 h-11" alt="Logo" />
             </Link>
             <button
               className="text-xl text-black"

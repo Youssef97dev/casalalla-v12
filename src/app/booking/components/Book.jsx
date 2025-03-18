@@ -53,6 +53,57 @@ const options = [
   { value: "12", label: "12" },
 ];
 
+const salles = [
+  { value: "1", label: "1" },
+  { value: "2", label: "2" },
+  { value: "3", label: "3" },
+  { value: "4", label: "4" },
+  { value: "5", label: "5" },
+];
+
+const tablesCounts = [
+  {
+    salleValue: "1",
+    tables: [
+      { value: "001", label: "001" },
+      { value: "125", label: "125" },
+      { value: "130", label: "130" },
+    ],
+  },
+  {
+    salleValue: "2",
+    tables: [
+      { value: "002", label: "002" },
+      { value: "126", label: "126" },
+      { value: "131", label: "131" },
+    ],
+  },
+  {
+    salleValue: "3",
+    tables: [
+      { value: "003", label: "003" },
+      { value: "127", label: "127" },
+      { value: "132", label: "132" },
+    ],
+  },
+  {
+    salleValue: "4",
+    tables: [
+      { value: "004", label: "004" },
+      { value: "128", label: "128" },
+      { value: "133", label: "133" },
+    ],
+  },
+  {
+    salleValue: "5",
+    tables: [
+      { value: "005", label: "005" },
+      { value: "129", label: "129" },
+      { value: "134", label: "134" },
+    ],
+  },
+];
+
 const time = [
   "13:00",
   "13:15",
@@ -69,6 +120,8 @@ const Book = () => {
   const [activeTab, setActiveTab] = useState(1);
   const [startDate, setStartDate] = useState(new Date());
   const [numberGuests, setNumberGuests] = useState(0);
+  const [sallesNumber, setSallesNumber] = useState(1);
+  const [tablesNumber, setTablesNumber] = useState(tablesCounts[0].tables[0]);
   const [timeBook, setTimeBook] = useState("");
   const [isClient, setIsClient] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -159,7 +212,7 @@ const Book = () => {
             </div>
           </Swiper>
         </div>
-        <div className="w-full h-full relative block lg:hidden">
+        <div className="w-full h-[50vh] relative block lg:hidden">
           <Swiper
             modules={[Navigation, Autoplay]}
             autoplay={{
@@ -230,6 +283,31 @@ const Book = () => {
                       options={options}
                       isSearchable={false}
                       onChange={(e) => setNumberGuests(e.value)}
+                      className="w-full border border-gray-400 rounded-md outline-none text-[14px] text-[#374151] "
+                    />
+                  </div>
+                </div>
+                <div className="w-full flex flex-col lg:flex-row justify-between items-center gap-4">
+                  <div className="w-full flex flex-col justify-center items-start gap-2">
+                    <strong className="text-[14px] leading-[20px] text-[#374151]">
+                      Salles
+                    </strong>
+                    <Select
+                      defaultValue={salles[0]}
+                      options={salles}
+                      isSearchable={false}
+                      onChange={(e) => setSallesNumber(e.value)}
+                      className="w-full border border-gray-400 rounded-md outline-none text-[14px] text-[#374151] "
+                    />
+                  </div>
+                  <div className="w-full flex flex-col justify-center items-start gap-2">
+                    <strong className="text-[14px] leading-[20px] text-[#374151]">
+                      Tables
+                    </strong>
+                    <Select
+                      defaultValue={{ value: "0", label: "Select a table..." }}
+                      options={tablesCounts[sallesNumber - 1].tables}
+                      isSearchable={false}
                       className="w-full border border-gray-400 rounded-md outline-none text-[14px] text-[#374151] "
                     />
                   </div>

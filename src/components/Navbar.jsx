@@ -56,11 +56,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="w-full flex justify-center items-center">
-          <img
-            src="/logo-2.png"
-            alt="Logo Casa lalla"
-            className={`w-28 h-28 lg:w-36 lg:h-36`}
-          />
+          <img src="/logo-6.png" alt="Logo Casa lalla" className={`mt-4`} />
         </div>
         <div className="w-full flex justify-end items-center gap-3 text-white cursor-pointer">
           <div
