@@ -34,9 +34,9 @@ const Contact = () => {
         <div className="w-full p-5 lg:p-10">
           <div className="w-full h-full flex flex-col justify-center items-center gap-4 text-center bg-background lg:p-20 p-5 font-medium">
             <img
-              src="/logo-1.png"
+              src="/logo-7.png"
               alt="Logo Casa lalla"
-              className={`w-44 h-44`}
+              className={`w-52 h-28`}
             />
             <p className="text-[11px] leading-[30px] uppercase">
               {t("contact.title")}
