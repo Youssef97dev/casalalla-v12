@@ -120,8 +120,8 @@ const Book = () => {
   const [activeTab, setActiveTab] = useState(1);
   const [startDate, setStartDate] = useState(new Date());
   const [numberGuests, setNumberGuests] = useState(0);
-  const [sallesNumber, setSallesNumber] = useState(1);
-  const [tablesNumber, setTablesNumber] = useState(tablesCounts[0].tables[0]);
+  const [sallesNumber, setSallesNumber] = useState(0);
+  const [tableNumber, setTableNumber] = useState(0);
   const [timeBook, setTimeBook] = useState("");
   const [isClient, setIsClient] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -157,6 +157,8 @@ const Book = () => {
             year: "numeric",
           }).format(startDate),
           time: timeBook,
+          salle: sallesNumber,
+          table: tableNumber,
           comment: formData.comment,
         });
         if (res.status === 200) {
@@ -307,6 +309,7 @@ const Book = () => {
                     <Select
                       defaultValue={{ value: "0", label: "Select a table..." }}
                       options={tablesCounts[sallesNumber - 1].tables}
+                      onChange={(e) => setTableNumber(e.value)}
                       isSearchable={false}
                       className="w-full border border-gray-400 rounded-md outline-none text-[14px] text-[#374151] "
                     />
