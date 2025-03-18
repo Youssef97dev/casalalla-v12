@@ -124,6 +124,9 @@ const Navbar = () => {
                 <Link href="#activities">{t("navbar.activities")}</Link>
               </li>
               <li className="pb-3 border-b border-bg_navbar">
+                <Link href="/day-pass">{`Day pass`}</Link>
+              </li>
+              <li className="pb-3 border-b border-bg_navbar">
                 <Link href={t("navbar.menu")} target="_blank">
                   Menu
                 </Link>
