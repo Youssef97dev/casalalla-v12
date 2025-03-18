@@ -120,7 +120,7 @@ const Book = () => {
   const [activeTab, setActiveTab] = useState(1);
   const [startDate, setStartDate] = useState(new Date());
   const [numberGuests, setNumberGuests] = useState(0);
-  const [sallesNumber, setSallesNumber] = useState(0);
+  const [sallesNumber, setSallesNumber] = useState(1);
   const [tableNumber, setTableNumber] = useState(0);
   const [timeBook, setTimeBook] = useState("");
   const [isClient, setIsClient] = useState(false);
