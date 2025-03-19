@@ -13,7 +13,24 @@ const images = [
       "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/xynldb9nt1wsnincchni",
     type: "video",
   },
-
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/y8mgeibp0j64usbkwkzc",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/y8mgeibp0j64usbkwkzc",
+    type: "image",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/prbhzrtu4lljtga2t8ze",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/prbhzrtu4lljtga2t8ze",
+    type: "image",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/am1v8ayvszpd18x3ll3t",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/am1v8ayvszpd18x3ll3t",
+    type: "image",
+  },
   {
     src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/fxy4qfejaopcdeqzzavq",
     thumbnail:
@@ -96,6 +113,18 @@ const images = [
     src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/cgww8rhzu6tppbuijmei",
     thumbnail:
       "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto:eco/v1/CasaLalla-VNor/cgww8rhzu6tppbuijmei",
+    type: "image",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/dntepkyb0ii41oxobuyt",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/dntepkyb0ii41oxobuyt",
+    type: "image",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/pjm7bi8pm9u2zdstjpty",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/pjm7bi8pm9u2zdstjpty",
     type: "image",
   },
   {
