@@ -48,6 +48,11 @@ const images = [
     thumbnail:
       "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/k530wqfiey0i2d9fhvow",
   },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/vda8t8i1tvblirlwxn57",
+    thumbnail:
+      "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/vda8t8i1tvblirlwxn57",
+  },
 ];
 
 const Slides = () => {
