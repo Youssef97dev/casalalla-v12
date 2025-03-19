@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { TypeAnimation } from "react-type-animation";
 
 const Intro = () => {
   const { t } = useTranslation();
@@ -28,7 +29,12 @@ const Intro = () => {
       <div className=" w-full py-10 px-4 lg:p-10 bg-white">
         <div className="w-full h-full flex flex-col justify-center items-center gap-1 text-center border border-secondary lg:p-20 p-8">
           <h1 className="text-[20px] leading-[36px]  font-sackerCothic uppercase text-primary mb-5">
-            {t("events.title")}
+            <TypeAnimation
+              sequence={[t("events.title"), 2000]}
+              wrapper="span"
+              speed={10}
+              repeat={Infinity}
+            />
           </h1>
           <p className="text-[16px] leading-[34px] ">{t("events.content")}</p>
         </div>

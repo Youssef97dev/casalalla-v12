@@ -4,6 +4,7 @@ import Link from "next/link";
 import Accordion from "./Accordion";
 import Slides from "./Slides";
 import { useTranslation } from "react-i18next";
+import { TypeAnimation } from "react-type-animation";
 
 const Activities = () => {
   const { t } = useTranslation();
@@ -31,7 +32,12 @@ const Activities = () => {
         <Slides />
         <div className="w-full h-full flex flex-col justify-start items-center gap-1 text-center px-5 lg:px-32">
           <h1 className="text-[20px] leading-[36px]  font-sackerCothic uppercase text-secondary my-10">
-            {t("activities.title")}
+            <TypeAnimation
+              sequence={[t("activities.title"), 2000]}
+              wrapper="span"
+              speed={10}
+              repeat={Infinity}
+            />
           </h1>
           <Accordion />
           <Link
