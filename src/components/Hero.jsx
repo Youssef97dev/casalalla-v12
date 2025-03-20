@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Navbar from "./Navbar";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
@@ -25,6 +26,21 @@ const Hero = () => {
 
       {/* Navbar */}
       <Navbar />
+
+      {/* Content */}
+      <div className="absolute bottom-1/2 left-3 pr-32 text-white">
+        <TypeAnimation
+          sequence={[
+            "Set against the breathtaking backdrop of Lac Lalla Takerkoust",
+            2000,
+            "A hideaway haven capturing the essence of natural beauty at Lac Lalla Takerkoust",
+            2000,
+          ]}
+          wrapper="span"
+          speed={30}
+          repeat={Infinity}
+        />
+      </div>
 
       {/* Scroll Down Arrow */}
       <div className="absolute bottom-14 left-1/2 transform -translate-x-1/2 text-white">
