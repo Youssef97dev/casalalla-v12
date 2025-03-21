@@ -28,13 +28,13 @@ const Hero = () => {
       <Navbar />
 
       {/* Content */}
-      <div className="absolute bottom-1/2 left-3 pr-32 text-white">
+      <div className="absolute top-64 left-3 pr-32 text-white text-[14px] font-dominica">
         <TypeAnimation
           sequence={[
             "Set against the breathtaking backdrop of Lac Lalla Takerkoust",
-            2000,
+            3000,
             "A hideaway haven capturing the essence of natural beauty at Lac Lalla Takerkoust",
-            2000,
+            3000,
           ]}
           wrapper="span"
           speed={30}

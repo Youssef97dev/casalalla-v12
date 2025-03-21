@@ -29,6 +29,7 @@ module.exports = {
       fontFamily: {
         rolling: ["RollingPen", "serif"],
         sackerCothic: ["Sacker-Gothics", "sans-serif"],
+        dominica: ["DOMINICA", "serif"],
       },
     },
   },
