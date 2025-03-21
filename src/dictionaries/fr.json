@@ -54,5 +54,11 @@
     "email": "E-mail",
     "subject": "Sujet",
     "submit": "Envoyer"
+  },
+  "rooms": {
+    "title": "Découvrez un confort inégalé sur les rives du lac Takerkoust",
+    "content_1": "Au cœur des montagnes de l'Atlas et à 8 minutes du désert d'Agafay, Casa Lalla est le dernier ajout à la scène gastronomique florissante de Marrakech. Avec une vue exceptionnelle sur le lac, vous pourrez déguster des fruits de mer exquis avec un minimum de préparation, en utilisant les meilleurs produits traités avec le plus grand respect et la plus grande expertise.",
+    "content_2": "Avec une vue exceptionnelle sur le lac, la Casa Lalla Takerkoust est un lieu unique en son genre qui offre un véritable luxe grâce à son environnement naturel, sa bonne compagnie et son énergie, et qui rappelle que la vie est une célébration.",
+    "button_book": "Réserver une chambre"
   }
 }
