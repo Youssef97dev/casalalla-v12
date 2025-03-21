@@ -59,7 +59,7 @@ const Activities = () => {
   }, []);
 
   return (
-    <div className="w-full h-full flex flex-col justify-start items-center gap-2 mt-0 lg:mt-0">
+    <div className="w-full h-full flex flex-col justify-start items-center gap-2 mt-10 lg:mt-0">
       <h1 className="lg:text-[26px] text-[19px] leading-[36px]  font-sackerCothic uppercase text-primary">
         {`Activities`}
       </h1>
