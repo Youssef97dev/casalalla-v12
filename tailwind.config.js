@@ -30,6 +30,7 @@ module.exports = {
         rolling: ["RollingPen", "serif"],
         sackerCothic: ["Sacker-Gothics", "sans-serif"],
         dominica: ["DOMINICA", "serif"],
+        mollyserif: ["MollySerifN", "serif"],
       },
     },
   },

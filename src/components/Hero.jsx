@@ -28,7 +28,7 @@ const Hero = () => {
       <Navbar />
 
       {/* Content */}
-      <div className="absolute top-64 left-3 pr-32 text-white text-[14px] font-dominica block md:hidden">
+      <div className="absolute top-64 left-3 pr-32 text-white text-[14px] font-mollyserif block md:hidden">
         <TypeAnimation
           sequence={[
             "Set against the breathtaking backdrop of Lac Lalla Takerkoust",
