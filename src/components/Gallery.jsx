@@ -247,13 +247,15 @@ const Gallery = () => {
                   alt={`casa lalla takerkoust ${index}`}
                 />
               ) : (
-                <iframe
-                  src={image.src}
-                  title={`video casa lalla ${index}`}
-                  className="rounded-sm w-full h-full"
-                  allowFullScreen
-                  style={{ aspectRatio: "9/16" }} // Maintain aspect ratio
-                />
+                <video
+                  className="object-cover h-full w-full rounded-sm"
+                  autoPlay
+                  loop
+                  muted
+                >
+                  <source src={`${image.src}`} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               )}
             </div>
           </Link>
