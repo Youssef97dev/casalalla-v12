@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 const ButtonReservation = () => {
   const { t } = useTranslation();
   return (
-    <div className="fixed bottom-0 left-0 w-full flex justify-center items-center bg-primary text-white lg:hidden ">
+    <div className="fixed bottom-0 left-0 z-30 w-full flex justify-center items-center bg-primary text-white lg:hidden ">
       <div className="w-[86%] flex justify-center items-center py-3">
         <Link href="/booking" className="uppercase tracking-widest">
           {t("navbar.reservation")}
