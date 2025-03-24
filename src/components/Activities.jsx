@@ -6,6 +6,42 @@ import Slides from "./Slides";
 import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
 
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+
+const itemsMobile = [
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/hfrl3m9o4ip3hter3tuc",
+    type: "image",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/o4ooppmdac4j4z0nyydx",
+    type: "image",
+  },
+  {
+    src: "https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/yjvuwne8b1fsr51ijhyj",
+    type: "image",
+  },
+  {
+    src: "/video-4.mp4",
+    type: "video",
+  },
+  {
+    src: "/video-5.mp4",
+    type: "video",
+  },
+  {
+    src: "/video-6.mp4",
+    type: "video",
+  },
+];
+
 const Activities = () => {
   const { t } = useTranslation();
   return (
@@ -20,12 +56,49 @@ const Activities = () => {
           width={1000}
           className="object-cover w-full h-full md:block hidden"
         />
-        <Image
-          src="https://res.cloudinary.com/dz7wroord/image/upload/f_auto,q_auto/v1/CasaLalla-VNor/hfrl3m9o4ip3hter3tuc"
-          height={1000}
-          width={1000}
-          className="object-cover w-full h-full md:hidden block"
-        />
+        <div className="w-full h-[80vh] md:hidden block">
+          <Swiper
+            modules={[Navigation, Autoplay]}
+            autoplay={{
+              delay: 4000,
+              disableOnInteraction: false,
+            }}
+            speed={1400}
+            loop={true}
+            navigation={{
+              nextEl: ".swiper-button-next-ex1",
+              prevEl: ".swiper-button-prev-ex1",
+            }}
+            className="swiper w-full h-full"
+            id="slider1"
+          >
+            <div className="swiper-wrapper">
+              {itemsMobile.map((item, i) => {
+                return (
+                  <SwiperSlide key={i}>
+                    {item.type === "image" ? (
+                      <img
+                        src={`${item.src}`}
+                        className="object-cover w-full h-full"
+                        alt="itemImage"
+                      />
+                    ) : (
+                      <video
+                        className="object-cover h-full w-full"
+                        autoPlay
+                        loop
+                        muted
+                      >
+                        <source src={`${item.src}`} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    )}
+                  </SwiperSlide>
+                );
+              })}
+            </div>
+          </Swiper>
+        </div>
         {/* Filter */}
       </div>
       <div className="w-full flex flex-col justify-center items-center gap-4 pt-10 pb-5">
