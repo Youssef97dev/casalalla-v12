@@ -30,6 +30,12 @@ const About = () => {
       <p className="text-[16px] leading-[34px] px-0 2xl:px-12 ">
         {t("about.content_2")}
       </p>
+      <p className="text-[16px] leading-[34px] px-0 2xl:px-12 ">
+        {t("about.content_3")}
+      </p>
+      <p className="text-[16px] leading-[34px] px-0 2xl:px-12 ">
+        {t("about.content_4")}
+      </p>
       <Link
         href="/booking"
         className="py-2 px-8 uppercase tracking-widest border border-secondary text-secondary rounded-lg text-[12px] leading-[34px] hover:bg-secondary hover:text-white duration-200 transition-all ease-out font-sackerCothic"
