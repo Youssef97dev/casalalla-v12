@@ -2,8 +2,10 @@
 import Image from "next/image";
 import Navbar from "./Navbar";
 import { TypeAnimation } from "react-type-animation";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <div id="hero" className="relative bg-background w-full h-screen">
       <video
@@ -30,12 +32,7 @@ const Hero = () => {
       {/* Content */}
       <div className="absolute top-64 left-3 pr-32 text-white text-[14px] font-mollyserif block md:hidden">
         <TypeAnimation
-          sequence={[
-            "Set against the breathtaking backdrop of Lac Lalla Takerkoust",
-            3000,
-            "A hideaway haven capturing the essence of natural beauty at Lac Lalla Takerkoust",
-            3000,
-          ]}
+          sequence={[t("hero.text_1"), 3000, t("hero.text_2"), 3000]}
           wrapper="span"
           speed={30}
           repeat={Infinity}
